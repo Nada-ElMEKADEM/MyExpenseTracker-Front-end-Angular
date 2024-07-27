@@ -1,0 +1,36 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.totals-container {
+  margin-top: 2cm;
+  display: flex;
+  justify-content: center;
+  gap: 20px;               /* Espace entre les totaux */
+  margin-bottom: 20px;     /* Espace sous les totaux */
+}
+
+.total-item {
+  background-color: rgb(222, 231, 234);
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 200px;
+  text-align: center;
+  color: black;
+}
+
+.charts-container {
+  margin-left: 5cm;
+  display: flex;
+  justify-content: center;
+  gap: 20px;               /* Espace entre les graphiques */
+}
+
+canvas {
+  width: 600px;
+  height: 400px;
+}

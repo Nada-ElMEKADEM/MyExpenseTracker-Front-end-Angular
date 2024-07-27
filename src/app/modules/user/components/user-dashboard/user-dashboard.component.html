@@ -1,0 +1,24 @@
+<div class="totals-container">
+    <div class="total-item">
+      <h3>
+        Total Income: 
+      </h3>
+      <span style="color: green;">{{ totalIncome | currency:'USD':'symbol' }}</span> 
+    </div>
+    <div class="total-item">
+      <h3>
+        Total Expense: 
+      </h3>
+      <span style="color: red;">{{ totalExpense | currency:'USD':'symbol' }}</span> 
+    </div>
+  </div>
+  
+  <div class="charts-container">
+    <nz-card nzType="inner" nzTitle="Income Chart">
+      <canvas #incomeCanvas></canvas>
+    </nz-card>
+    <nz-card nzType="inner" nzTitle="Expense Chart">
+      <canvas #expenseCanvas></canvas>
+    </nz-card>
+  </div>
+  

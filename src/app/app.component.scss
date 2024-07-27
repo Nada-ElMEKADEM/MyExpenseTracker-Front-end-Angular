@@ -1,0 +1,103 @@
+.user-navbar {
+    background-color: #A1C3D1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    .navbar-title {
+      > a {
+        color: white!important;
+        margin-right: 50px;  // Remplacer margin-left par margin-right
+        font-size: 25px;
+        font-weight: bolder;
+        text-decoration: none;
+      }
+    }
+  
+    .navbar-links {
+      display: flex;
+      align-items: center;
+  
+      a {
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+        font-size: large; // Remplacer margin-left par margin-right pour l'espacement des liens
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: rgb(110, 180, 210);
+        }
+  
+        &:last-child {
+          margin-right: 0; // Pour supprimer le margin-right du dernier lien
+        }
+      }
+     
+    }
+  }
+  
+.logo{
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: #b3ccd7;;
+  margin: 16px;
+  padding: 0 16px;
+  color: white;
+}
+
+.avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.user-info{
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.2cm;
+}
+
+.user-info strong{
+  font-size: 16px;
+}
+
+.layout{
+  min-height: 100vh;
+
+}
+
+nz-sider{
+  overflow: auto;
+  height: 100%;
+  position: fixed;
+  left:0;
+  background-color: #d1f3f6;
+   
+ 
+}
+
+nz-header{
+  padding: 0;
+  height:75px;
+}
+
+nz-content{
+  margin:24px 16 px 0;
+  overflow:initial;
+  
+
+}
+.inner-content{
+ 
+  padding: 24px;
+  background-color: white;
+  text-align: center;
+
+}
+nz-footer{
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+/* income.component.scss */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px; /* Ajustez la largeur maximale selon les besoins */
+    padding: 16px; /* Ajout de padding pour plus d'espace */
+  }
+  
+  .form-container,
+  .income-list-container {
+    margin-top: 16px;
+  }
+  
+  .form-container {
+    flex: 0 0 48%; /* Prenez 48% de la largeur du conteneur */
+    margin-right: 5cm;
+    width: 100%;
+    margin-left:3cm /* Ajoutez une marge à droite pour créer un espace */
+  }
+  
+  .income-list-container {
+    flex: 0 0 48%; /* Prenez 48% de la largeur du conteneur */
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .form-container,
+    .income-list-container {
+      flex: 1 0 100%; /* Prenez toute la largeur sur les petits écrans */
+      margin-right: 0; /* Supprimez la marge à droite sur les petits écrans */
+    }
+  }
+  
